@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Audio Call</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e5ddd5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 300px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .header {
+            background-color: #25D366;
+            color: white;
+            padding: 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .call-info {
+            margin: 20px 0;
+        }
+        .call-buttons {
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #128C7E;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Calling...</h2>
+        </div>
+        <div class="call-info">
+            <p>John Doe</p>
+            <p>Calling...</p>
+        </div>
+        <div class="call-buttons">
+            <button class="button" onclick="endCall()">End Call</button>
+        </div>
+    </div>
+
+    <script>
+        function endCall() {
+            alert("Call Ended");
+            // Here you can add functionality to redirect or close the call interface
+        }
+    </script>
+</body>
+</html>
+
